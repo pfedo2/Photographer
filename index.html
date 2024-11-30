@@ -4,110 +4,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-     
-        body {
-            margin: 0;
-            font-family: 'Roboto', sans-serif;
-        }
-
-        
-        .footer {
-            position: absolute;
-            width: 1600px;
-            height: 252px;
-            left: 0;
-            top: 2094px;
-            background: #2F303A;
-        }
-
-        .footer .webstudio {
-            position: absolute;
-            width: 145px;
-            height: 31px;
-            left: 215px;
-            top: 2154px;
-            font-family: 'Raleway', sans-serif;
-            font-weight: 700;
-            font-size: 26px;
-            line-height: 31px;
-            letter-spacing: 0.03em;
-            color: #2196F3;
-        }
-
-        .footer .address,
-        .footer .email,
-        .footer .phone {
-            position: absolute;
-            left: 215px;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 24px;
-            letter-spacing: 0.03em;
-            color: rgba(255, 255, 255, 0.6);
-        }
-
-        .footer .address { top: 2205px; }
-        .footer .email { top: 2235px; }
-        .footer .phone { top: 2265px; }
-
-        .our-team {
-            position: absolute;
-            width: 1600px;
-            height: 648px;
-            left: 0;
-            top: 1446px;
-            background: #F5F4FA;
-        }
-
-        .team-card {
-            position: absolute;
-            width: 270px;
-            height: 368px;
-            background: #FFFFFF;
-            border-radius: 0 0 4px 4px;
-        }
-
-        .team-card img {
-            width: 270px;
-            height: 260px;
-            border-radius: 0;
-        }
-
-        .team-card .name {
-            text-align: center;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 19px;
-            color: #212121;
-        }
-
-        .team-card .role {
-            text-align: center;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 19px;
-            color: #757575;
-        }
-        
-    </style>
 </head>
 <body>
-    
-    <div class="footer">
-        <div class="webstudio">WebStudio</div>
-        <div class="address">м. Київ, пр-т Лесі Українки, 26</div>
-        <div class="email">info@devstudio.com</div>
-        <div class="phone">+38 096 111 11 11</div>
-    </div>
-
-    <section class="our-team">
-        <div class="team-card" style="left: 215px; top: 1632px;">
-            <img src="4853.jpg" alt="Team member">
-            <div class="name">Ігор Дем'яненко</div>
-            <div class="role">Product Designer</div>
-        </div>
-        
-    </section>
+    body {
+        font-family: 'Inter', sans-serif;
+       }
+       
+       .footer {
+        position: absolute;
+        width: 1600px;
+        height: 252px;
+        left: 0px;
+        top: 2094px;
+        background: #2F303A;
+       }
+       
+       .footer__webstudio {
+        position: absolute;
+        width: 145px;
+        height: 31px;
+        left: 215px;
+        top: 2154px;
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        letter-spacing: 0.03em;
+        color: #2196F3;
+       }
+       
+       .footer__address {
+        position: absolute;
+        width: 231px;
+        height: 81px;
+        left: 215px;
+        top: 2205px;
+       }
+       
+       .footer__address-text {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px; /* or 171% */
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+       }
+       
+       .footer__contact-info {
+        position: absolute;
+        width: 136px;
+        height: 21px;
+        left: 215px;
+        top: 2235px;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+       }
+       
+       .team {
+        position: absolute;
+        width: 1600px;
+        height: 648px;
+        left: 0px;
+        top: 1446px;
+        background: #F5F4FA;
+       }
+       
+       .team__card {
+        position: absolute;
+        width: 270px;
+        height: 368px;
+        left: 215px;
+        top: 1632px;
+        background: #FFFFFF;
+        border-radius: 0px 0px 4px 4px;
+       }
+       
+       .team__card-img {
+        position: absolute;
+        width: 270px;
+        height: 260px;
+        left: 215px;
+        top: 1632px;
+        background: url('image.jpg'); /* replace with current picture */
+        border-radius: 0px;
+       }
+       
+       .team__member-name {
+        position: absolute;
+        width: 129px;
+        height: 19px;
+        left: 286px;
+        top: 1922px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #212121;
+       }
+       
+       .team__member-role {
+        position: absolute;
+        width: 130px;
+        height: 19px;
+        left: 285px;
+        top: 1951px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #757575;
+       }
+       
+       .feature {
+        position: absolute;
+        width: 270px;
+        height: 98px;
+        left: 215px;
+        top: 774px;
+       }
+       
+       .feature__title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #212121;
+       }
+       
+       .feature__text {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px; /* or 171% */
+        letter-spacing: 0.03em;
+        color: #757575;
+       }
+       
+       .header {
+        position: absolute;
+        width: 1600px;
+        height: 600px;
+        left: 0px;
+        top: 80px;
+        background: #2F303A;
+       }
+       
+       .header__title {
+        position: absolute;
+        width: 696px;
+        height: 120px;
+        left: 452px;
+        top: 280px;
+       }
 </body>
 </html>
