@@ -1,106 +1,113 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebStudio</title>
+    <title>Document</title>
     <style>
+     
         body {
-            font-family: 'Arial', sans-serif;
             margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
         }
 
-        header, main, footer {
-            width: 100%;
+        
+        .footer {
+            position: absolute;
+            width: 1600px;
+            height: 252px;
+            left: 0;
+            top: 2094px;
+            background: #2F303A;
         }
 
-        header {
-            display: flex;
-            justify-content: space-between; 
-            align-items: center;
-            padding: 20px;
-            background-color: #333;
-            color: #fff;
+        .footer .webstudio {
+            position: absolute;
+            width: 145px;
+            height: 31px;
+            left: 215px;
+            top: 2154px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 31px;
+            letter-spacing: 0.03em;
+            color: #2196F3;
         }
 
-        .container {
-            display: flex;
-            justify-content: space-between; 
-            padding: 20px;
-            gap: 20px; 
+        .footer .address,
+        .footer .email,
+        .footer .phone {
+            position: absolute;
+            left: 215px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
         }
 
-        section {
-            display: flex;
-            flex-direction: column; 
-            flex: 1;
-            background-color: #f4f4f4;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        .footer .address { top: 2205px; }
+        .footer .email { top: 2235px; }
+        .footer .phone { top: 2265px; }
+
+        .our-team {
+            position: absolute;
+            width: 1600px;
+            height: 648px;
+            left: 0;
+            top: 1446px;
+            background: #F5F4FA;
         }
 
-        footer {
-            display: flex;
-            justify-content: center; 
-            padding: 10px;
-            background-color: #333;
-            color: #fff;
+        .team-card {
+            position: absolute;
+            width: 270px;
+            height: 368px;
+            background: #FFFFFF;
+            border-radius: 0 0 4px 4px;
         }
 
-        header nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px;
+        .team-card img {
+            width: 270px;
+            height: 260px;
+            border-radius: 0;
         }
 
-        header nav a:hover {
-            text-decoration: underline;
-        }
-
-        .container > div {
-            background-color: #eee;
-            padding: 20px;
-            border-radius: 8px;
-            width: 30%;
+        .team-card .name {
             text-align: center;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #212121;
         }
 
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-            }
-            .container > div {
-                width: 100%;
-                margin-bottom: 20px;
-            }
+        .team-card .role {
+            text-align: center;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #757575;
         }
+        
     </style>
 </head>
 <body>
+    
+    <div class="footer">
+        <div class="webstudio">WebStudio</div>
+        <div class="address">м. Київ, пр-т Лесі Українки, 26</div>
+        <div class="email">info@devstudio.com</div>
+        <div class="phone">+38 096 111 11 11</div>
+    </div>
 
-    <header>
-        <div>Логотип</div>
-        <nav>
-            <a href="#">Головна</a>
-            <a href="#">Про нас</a>
-            <a href="#">Послуги</a>
-            <a href="#">Контакти</a>
-        </nav>
-    </header>
-
-    <main>
-        <section class="container">
-            <div>Контент 1</div>
-            <div>Контент 2</div>
-            <div>Контент 3</div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 WebStudio. Всі права захищені.</p>
-    </footer>
-
+    <section class="our-team">
+        <div class="team-card" style="left: 215px; top: 1632px;">
+            <img src="4853.jpg" alt="Team member">
+            <div class="name">Ігор Дем'яненко</div>
+            <div class="role">Product Designer</div>
+        </div>
+        
+    </section>
 </body>
 </html>
