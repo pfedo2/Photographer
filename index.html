@@ -1,195 +1,55 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WebStudio</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
+
 <body>
-
-<header class="header">
-<div class="container">
-<h1 class="header__title">Effective solutions for your business</h1>
-<button class="header__button">Order a service</button>
-</div>
-</header>
-
-<section class="features">
-<div class="container">
-<h2 class="section-title">Features</h2>
-<div class="features__list">
-<div class="feature">
-<h3 class="feature__title">ATTENTION TO DETAIL</h3>
-<p class="feature__text">Ideological considerations, and even the beginning of everyday work on forming a position.</p>
-</div>
-<div class="feature">
-<h3 class="feature__title">PUNCTUALITY</h3>
-<p class="feature__text">The tasks of the organization, especially the framework and place of personnel training, are drawn to it.</p>
-</div>
-<div class="feature">
-<h3 class="feature__title">PLANNING</h3>
-<p class="feature__text">Similarly, consultation with a wide range of assets largely determines.</p>
-</div>
-<div class="feature">
-<h3 class="feature__title">MODERN TECHNOLOGIES</h3>
-<p class="feature__text">The significance of these problems is so obvious that the implementation of planned tasks.</p>
-</div>
-</div>
-</div>
-</section>
-
-<section class="team">
-<div class="container"> 
-<h2 class="section-title">Our team</h2>
- <div class="team__list">
- <div class="team-card">
- <div class="team-card__img"></div>
- <h3 class="team-card__name">Ihor Demyanenko</h3>
- <p class="team-card__role">Product Designer</p>
- </div>
- <div class="team-card">
- <div class="team-card__img"></div>
- <h3 class="team-card__name">Olga Repina</h3>
- <p class="team-card__role">Frontend Developer</p>
- </div>
- <div class="team-card">
- <div class="team-card__img"></div>
- <h3 class="team-card__name">Mykola Tarasov</h3>
- <p class="team-card__role">Marketing</p>
- </div>
- <div class="team-card">
- <div class="team-card__img"></div>
- <h3 class="team-card__name">Mykhailo Yermakov</h3>
- <p class="team-card__role">UI Designer</p>
- </div>
- </div>
- </div>
- </section>
-
- <section class="portfolio">
- <div class="container">
- <h2 class="section-title">What we do</h2>
- <div class="portfolio__list">
- <div class="portfolio__item"></div>
- <div class="portfolio__item"></div>
- <div class="portfolio__item"></div>
- </div>
- </div>
- </section>
-
- <footer class="footer">
- <div class="container">
- <h2 class="footer__title">WebStudio</h2>
- <address class="footer__address">
- m. Kyiv, Lesi Ukrainky Ave., 26<br>
-info@devstudio.com<br>
-+38 096 111 11 11
-</address>
-</div>
-</footer>
-
-* {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
-}
-body {
- font-family: 'Roboto', sans-serif;
- color: #212121;
- line-height: 1.6;
-}
-.container {
- max-width: 1170px;
- margin: 0 auto;
- padding: 0 15px;
-}
-.header {
- background: #2F303A;
- color: #FFF;
- text-align: center;
- padding: 60px 0;
-}
-.header__title {
- font-size: 44px;
- font-weight: 900;
- text-transform: uppercase;
- margin-bottom: 20px;
-}
-.header__button {
- background: #2196F3;
- color: #FFF;
- border: none;
- padding: 10px 20px;
- font-size: 16px;
- cursor: pointer;
-}
-.features {
- background: #F5F4FA;
- padding: 40px 0;
-}
-.features__list {
- display: flex;
- justify-content: space-between;
- gap: 20px;
-}
-.feature {
- background: #FFF;
- padding: 20px;
- border-radius: 4px;
- text-align: center;
-}
-.feature__title {
- font-weight: 700;
- margin-bottom: 10px;
-}
-.team {
- background: #F5F4FA;
- padding: 40px 0;
-}
-.team__list {
- display: flex;
- justify-content: space-between;
- gap: 20px;
-}
-.team-card {
- background: #FFF;
- border-radius: 4px;
- text-align: center;
- padding: 20px;
-}
-.team-card__img {
- height: 260px;
- background: #DDD;
- margin-bottom: 10px;
-}
-.portfolio {
- background: #FFF;
- padding: 40px 0;
-}
-.portfolio__list {
- display: grid;
- grid-template-columns: repeat(3, 1fr);
- gap: 20px;
-}
-.portfolio__item {
- height: 300px;
- background: #EEE;
-}
-.footer {
- background: #2F303A;
- color: #FFF;
- text-align: center;
- padding: 20px 0;
-}
-.footer__title {
- font-size: 26px;
- font-weight: 700;
- margin-bottom: 10px;
-}
-.footer__address {
- font-size: 14px;
- line-height: 1.8;
-}
+    <div class="holder">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+       </div>
+       body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f4f4f4;
+       }
+       
+       .holder {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 10px; /* Space between items */
+        width: 300px;
+        height: 300px;
+       }
+       
+       .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #2196F3;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 5px;
+       }
+       
+       .item:nth-child(1) {
+        grid-column: 1 / span 2;
+       }
+       
+       .item:nth-child(5) {
+        grid-column: 1 / span 2;
+       }
 </body>
 </html>
