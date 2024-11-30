@@ -5,41 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
     <style>
-        .container {
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header, main, footer {
             width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between; 
+            padding: 20px;
+            gap: 20px; 
         }
 
         section {
-            padding-top: 40px;
-            padding-bottom: 40px;
+            display: flex;
+            flex-direction: column; 
+            flex: 1;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        h1, p {
+        footer {
+            display: flex;
+            justify-content: center; 
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container > div {
+            background-color: #eee;
+            padding: 20px;
+            border-radius: 8px;
+            width: 30%;
             text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .container > div {
+                width: 100%;
+                margin-bottom: 20px;
+            }
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Ласкаво просимо до WebStudio</h1>
+        <div>Логотип</div>
+        <nav>
+            <a href="#">Головна</a>
+            <a href="#">Про нас</a>
+            <a href="#">Послуги</a>
+            <a href="#">Контакти</a>
+        </nav>
     </header>
 
-    <section class="container">
-        <h2>Наші послуги</h2>
-        <p>Ми пропонуємо найкращі веб-рішення для вашого бізнесу.</p>
-    </section>
-
-    <section class="container">
-        <h2>Портфоліо</h2>
-        <p>Подивіться наші успішні проєкти.</p>
-    </section>
+    <main>
+        <section class="container">
+            <div>Контент 1</div>
+            <div>Контент 2</div>
+            <div>Контент 3</div>
+        </section>
+    </main>
 
     <footer>
-        <p>© 2024 WebStudio</p>
+        <p>&copy; 2024 WebStudio. Всі права захищені.</p>
     </footer>
 
 </body>
