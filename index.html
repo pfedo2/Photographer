@@ -1,72 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Background Design</title>
- <style>
- body {
- margin: 0;
- display: flex;
- justify-content: center;
- align-items: center;
- min-height: 100vh;
- background-color: #4CAF50; 
- }
-
- .bg-box {
- width: 600px;
- height: 400px;
- position: relative;
- background: url('https://img2.goodfon.ru/wallpaper/big/0/5b/pole-zelen-trava-dom-derevya.jpg') center/cover no-repeat; /* Central image */
- }
-
- .bg-box::before {
- content: '';
- position: absolute;
- top: -40px;
- left: 0;
- width: 100%;
- height: 40px;
- background: url('https://www.freeiconspng.com/uploads/lamp-png-0.png') repeat-x;
- background-size: 40px 40px; 
- }
-
- .bg-box::after {
- content: '';
- position: absolute;
- top: 0;
- left: -40px;
- width: 40px;
- height: 100%;
- background: url('https://vignette.wikia.nocookie.net/mashaandthebear/images/e/e0/Ёжик.png/revision/latest?cb=20180209130328&path-prefix=ru') repeat-y;
- background-size: 40px 40px; 
-}
-
-.bg-box span {
-position: absolute;
-top: 0;
-right: -40px;
-width: 40px;
-height: 100%;
-background: url('https:// avatanplus.com/files/resources/mid/58eb07b830eab15b56162788.png') repeat-y;
-background-size: 40px 40px; 
-}
-
-.bg-box span::after {
-content: '';
-position: absolute;
-bottom: -40px;
-left: 0;
-width: 100%;
-height: 40px;
-background: url('https://www.freeiconspng.com/uploads/grass-png-images-pictures- transparent-28.png') repeat-x;
-background-size: 100px 40px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-<div class="bg-box">
-<span></span>
-</div>
-</body> </html>
+    <div class=«holder»>
+        <h1>Title</h1>
+        <ul class=«list»>
+          <li>
+            <a href=«#»>link1</a>
+            <ul>
+              <li>
+                <a href=«#»>link2</a>
+              </li>
+              <li>
+                <a href=«#»>link3</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href=«https://www.youtube.com/»>link4</a>
+          </li>
+          <li>
+            <a href=«https://validator.w3.org/»>link5</a>
+          </li>
+          <li>
+            <a href=«#»>link6</a>
+          </li>
+        </ul>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, accusamus.
+        </p>
+        <h1>Title</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      a[href^=‘https’] {
+        colour: red;
+      }
+      
+      ul + p { { font-size: 12px
+        font-size: 24px;
+      }
+      
+</body>
+</html>
