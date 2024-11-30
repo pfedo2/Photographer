@@ -1,59 +1,113 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Task</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        
+        .footer {
+            position: absolute;
+            width: 1600px;
+            height: 252px;
+            left: 0;
+            top: 2094px;
+            background: #2F303A;
+        }
+
+        .footer .webstudio {
+            position: absolute;
+            width: 145px;
+            height: 31px;
+            left: 215px;
+            top: 2154px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 31px;
+            letter-spacing: 0.03em;
+            color: #2196F3;
+        }
+
+        .footer .address,
+        .footer .email,
+        .footer .phone {
+            position: absolute;
+            left: 215px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .footer .address { top: 2205px; }
+        .footer .email { top: 2235px; }
+        .footer .phone { top: 2265px; }
+
+        .our-team {
+            position: absolute;
+            width: 1600px;
+            height: 648px;
+            left: 0;
+            top: 1446px;
+            background: #F5F4FA;
+        }
+
+        .team-card {
+            position: absolute;
+            width: 270px;
+            height: 368px;
+            background: #FFFFFF;
+            border-radius: 0 0 4px 4px;
+        }
+
+        .team-card img {
+            width: 270px;
+            height: 260px;
+            border-radius: 0;
+        }
+
+        .team-card .name {
+            text-align: center;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #212121;
+        }
+
+        .team-card .role {
+            text-align: center;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #757575;
+        }
+        
+    </style>
 </head>
 <body>
+    
+    <div class="footer">
+        <div class="webstudio">WebStudio</div>
+        <div class="address">м. Київ, пр-т Лесі Українки, 26</div>
+        <div class="email">info@devstudio.com</div>
+        <div class="phone">+38 096 111 11 11</div>
+    </div>
 
-<!-- Завдання 1 -->
-<div class="text-box">
-<h3>Paint me pink (color:pink).</h3>
-<p>This element should remain unstyled.</p>
-<p id="greycol">Paint me gray (color:gray).</p>
-<div>This element should remain unstyled.</div>
-<div><p>Paint me red (color:red).</p></div>
-<h3>This element should remain unstyled.</h3>
-<p>Paint me green (color:green).</p>
-<p class="yellow">Color me yellow (color:yellow).</p>
-</div>
-
-<!-- Завдання 2 -->
-<div class="schedule">
-<ul class="monday">
-<li>English</li>
-<li>French</li>
-<li>Science</li>
-<li>Gym</li>
-</ul>
-
-<ul class="tuesday">
-<li>French</li>
-<li>English</li>
-<li>Gym</li>
-<li>Science</li>
-</ul>
-
-<ul class="wednesday">
-<li>English</li>
-<li>French</li>
-<li>Science</li>
-<li>Gym</li>
-</ul>
-
-<ul class="thursday">
-<li>French</li>
-<li>English</li>
-<li>Gym</li>
-<li>Science</li></ul> 
-
-<ul class="friday"> 
-<li>English</li>
-<li>French</li>
-<li>Science</li>
-<li>Gym</li>
-</div> 
-</body >
+    <section class="our-team">
+        <div class="team-card" style="left: 215px; top: 1632px;">
+            <img src="4853.jpg" alt="Team member">
+            <div class="name">Ігор Дем'яненко</div>
+            <div class="role">Product Designer</div>
+        </div>
+        
+    </section>
+</body>
 </html>
